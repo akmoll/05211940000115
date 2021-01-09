@@ -11,7 +11,7 @@
         {{csrf_field()}}
         <input type="hidden" name="id" value="{{ $p-> ID}}"> <br/>
         <div class="form-group">
-            <label">ID Pegawai</label>
+            <label>ID Pegawai</label>
             <select id="idp" name="idp" required="required" class="form-control"> <br/>
                 @foreach ($pegawai as $x)
                 <option value="{{$x -> pegawai_id}}" @if ($p->IDPegawai == $x->pegawai_id) selected="selected" @endif> {{$x -> pegawai_nama}} </option>
