@@ -42,6 +42,8 @@ Route::get('about', function () {
     return view('about');
 });
 
+
+//Pegawai
 Route::get('/pegawai', 'App\Http\Controllers\PegawaiController@index');
 Route::get('/pegawai/tambah', 'App\Http\Controllers\PegawaiController@tambah');
 Route::post('pegawai/store',  'App\Http\Controllers\PegawaiController@store');
@@ -53,8 +55,7 @@ Route::get('/pegawai/read/{id}', 'App\Http\Controllers\PegawaiController@read');
 
 
 
-
-
+//Pendapatan
 Route::get('/pendapatan', 'App\Http\Controllers\PendapatanController@index');
 Route::get('/pendapatan/tambah', 'App\Http\Controllers\PendapatanController@tambah');
 Route::post('pendapatan/input',  'App\Http\Controllers\PendapatanController@insert');
@@ -64,3 +65,11 @@ Route::get('/pendapatan/hapus/{id}', 'App\Http\Controllers\PendapatanController@
 Route::get('/pendapatan/cari','App\Http\Controllers\PendapatanController@cari');
 
 
+//Minuman
+Route::get('/minuman', 'App\Http\Controllers\MinumanController@index');
+Route::get('/minuman/tambah', 'App\Http\Controllers\MinumanController@tambah');
+Route::post('/minuman/input',  'App\Http\Controllers\MinumanController@insert');
+Route::get('/minuman/edit/{id}', 'App\Http\Controllers\MinumanController@edit');
+Route::post('/minuman/update', 'App\Http\Controllers\MinumanController@update');
+Route::get('/minuman/hapus/{id}', 'App\Http\Controllers\MinumanController@hapus');
+Route::get('/minuman/cari','App\Http\Controllers\MinumanController@cari');
