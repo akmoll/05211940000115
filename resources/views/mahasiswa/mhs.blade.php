@@ -4,7 +4,7 @@
 
 
 <div class="container">
-    <p>Cari Data Mahasiswa :</p>
+    <p>Cari Data Mahasiswa : </p>
 	<form action="/mahasiswa/cari" method="GET">
 		<input type="text" name="cari" placeholder="Cari Nama Mahasiswa" value="{{ old('cari') }}">
 		<input type="submit" value="CARI">

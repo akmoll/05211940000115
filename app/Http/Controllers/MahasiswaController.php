@@ -36,7 +36,7 @@ class MahasiswaController extends Controller
 
         ]);
 
-        //alihkan ke halaman awal
+        //alihkan ke halaman Awal
         return redirect('/mahasiswa');
     }
 

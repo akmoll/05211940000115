@@ -5,7 +5,7 @@
 <div class="container">
     <h3> Data Mahasiswa </h3>
 
-    <a href="/mahasiswa"> Kembali </a>
+    <a href="/mahasiswa"> Kembali  </a>
 
     <form action="/mahasiswa/input" method="post">
         {{ csrf_field()}}
