@@ -31,11 +31,11 @@
 			<td>{{ $p->pegawai_umur }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td>
-				<a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
+				<a href="/pegawai/edit/{{ $p->pegawai_id }}"><i class='fas fa-pen'></i></a>
 				|
-                <a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
+                <a href="/pegawai/hapus/{{ $p->pegawai_id }}"><i class='fas fa-eraser'></i></a>
                 |
-                <a href="/pegawai/read/{{ $p->pegawai_id }}">Detail</a>
+                <a href="/pegawai/read/{{ $p->pegawai_id }}"><i class="fa fa-info"></i></a>
 			</td>
 		</tr>
 		@endforeach

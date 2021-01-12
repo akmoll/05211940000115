@@ -73,3 +73,10 @@ Route::get('/minuman/edit/{id}', 'App\Http\Controllers\MinumanController@edit');
 Route::post('/minuman/update', 'App\Http\Controllers\MinumanController@update');
 Route::get('/minuman/hapus/{id}', 'App\Http\Controllers\MinumanController@hapus');
 Route::get('/minuman/cari','App\Http\Controllers\MinumanController@cari');
+
+//Mahasiswa
+Route::get('/mahasiswa', 'App\Http\Controllers\MahasiswaController@index');
+Route::get('/mahasiswa/tambah', 'App\Http\Controllers\MahasiswaController@tambah');
+Route::post('/mahasiswa/input',  'App\Http\Controllers\MahasiswaController@insert');
+Route::get('/mahasiswa/hapus/{id}', 'App\Http\Controllers\MahasiswaController@hapus');
+Route::get('/mahasiswa/cari','App\Http\Controllers\MahasiswaController@cari');
